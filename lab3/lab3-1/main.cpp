@@ -2,12 +2,14 @@
 #include <string>
 #include <cctype>
 
-bool isValidSNILS(const std::string& snils) {
-    std::string cleanedSnils;
+using namespace std;
+
+bool isValidSNILS(const string& snils) {
+    string cleanedSnils;
     for (char c : snils) {
         if (c == ' ' || c == '-') {
             continue;
-        } else if (!std::isdigit(c)) {
+        } else if (!isdigit(c)) {
             return false;
         }
         cleanedSnils += c;
@@ -42,20 +44,20 @@ bool isValidSNILS(const std::string& snils) {
         }
     }
 
-    int actualControlNumber = std::stoi(cleanedSnils.substr(9, 2));
+    int actualControlNumber = stoi(cleanedSnils.substr(9, 2));
 
     return controlNumber == actualControlNumber;
 }
 
 int main() {
-    std::string snils;
-    std::cout << "Введите номер СНИЛС: ";
-    std::cin >> snils;
+    string snils;
+    cout << "Введите номер СНИЛС: ";
+    cin >> snils;
 
     if (isValidSNILS(snils)) {
-        std::cout << "Номер СНИЛС валиден.\n";
+        cout << "Номер СНИЛС валиден.\n";
     } else {
-        std::cout << "Номер СНИЛС невалиден.\n";
+        cout << "Номер СНИЛС невалиден.\n";
     }
 
     return 0;
