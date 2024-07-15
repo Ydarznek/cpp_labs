@@ -4,7 +4,7 @@
 using namespace std;
 
 map<int, int> getMinCoins(int amount) {
-    const int coinDenominations[] = {2000, 1000, 500, 200, 100, 50, 10, 5, 1};
+    const int coinDenominations[] = {1000, 500, 200, 100, 50, 10, 5, 1};
     const int numDenominations = sizeof(coinDenominations) / sizeof(coinDenominations[0]);
 
     map<int, int> coinsUsed;
