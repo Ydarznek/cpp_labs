@@ -1,10 +1,10 @@
-#include "Lab.h"
+#include "lab.h"
 #include <algorithm>
 #include <iostream>
 
 using namespace std;
 
-int Lab::searchAndTranspose(int* array, int size, int key) {
+int searchAndTranspose(int* array, int size, int key) {
     for (int i = 0; i < size; ++i) {
         if (array[i] == key) {
             if (i > 0) {
@@ -16,9 +16,9 @@ int Lab::searchAndTranspose(int* array, int size, int key) {
     return -1;
 }
 
-void Lab::printArray(const int* array, int size) {
+void printArray(const int* array, int size) {
     for (int i = 0; i < size; ++i) {
-        std::cout << array[i] << " ";
+        cout << array[i] << " ";
     }
-    std::cout << std::endl;
+    cout << endl;
 }

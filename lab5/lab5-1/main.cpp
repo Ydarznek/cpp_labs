@@ -17,9 +17,11 @@ int main()
     cout << "Введите размер массива: ";
     cin >> size;
 
-    Lab lab(size);
-    lab.inputArray();
-    lab.printArray();
+    int* array = createArray(size);
 
+    inputArray(array, size);
+    printArray(array, size);
+
+    delete[] array;
     return 0;
 }

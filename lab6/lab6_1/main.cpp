@@ -8,10 +8,9 @@ int main() {
 //    task t;
 //    t.readAndWrite();
 
-    Lab lab;
     string filename = "poem.txt";
 
-    lab.writePoemToFile(filename);
+    writePoemToFile(filename);
 
     return 0;
 }

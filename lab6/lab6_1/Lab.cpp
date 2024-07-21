@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void Lab::writePoemToFile(const string& filename) {
+void writePoemToFile(const string& filename) {
     ofstream outFile(filename);
 
     if (!outFile) {

@@ -10,9 +10,9 @@ int main() {
     int kc = sizeof(a) / sizeof(a[0]);
     int* c;
 
-    c = Lab::max_vect(kc, a, b);
+    c = max_vect(kc, a, b);
 
-    Lab::writeArraysToFile(c, kc, "arrays.txt");
+    writeArraysToFile(c, kc, "arrays.txt");
 
     delete[] c;
 

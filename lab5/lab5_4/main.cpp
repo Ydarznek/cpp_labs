@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
-    int result = Lab::processArguments(argc, argv);
+    int result = processArguments(argc, argv);
     if (result != -1) {
         cout << "Результат: " << result << endl;
     }

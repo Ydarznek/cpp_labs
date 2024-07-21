@@ -1,23 +1,23 @@
-#include "Lab.h"
+#include "lab.h"
 #include <iostream>
 
-Lab::Lab(int size) : size(size), array(new int[size]) {}
+using namespace std;
 
-Lab::~Lab() {
-    delete[] array;
+int* createArray(int size) {
+    return new int[size];
 }
 
-void Lab::inputArray() {
-    std::cout << "Введите " << size << " значения(ий) для заполнения массива:\n";
+void inputArray(int* array, int size) {
+    cout << "Введите " << size << " значения(ий) для заполнения массива:\n";
     for (int i = 0; i < size; ++i) {
-        std::cout << "Введите значение для элемента " << i + 1 << ": ";
-        std::cin >> array[i];
+        cout << "Введите значение для элемента " << i + 1 << ": ";
+        cin >> array[i];
     }
 }
 
-void Lab::printArray() const {
-    std::cout << "Вы ввели следующие значения:\n";
+void printArray(const int* array, int size) {
+    cout << "Вы ввели следующие значения:\n";
     for (int i = 0; i < size; ++i) {
-        std::cout << "Элемент " << i + 1 << ": " << array[i] << "\n";
+        cout << "Элемент " << i + 1 << ": " << array[i] << "\n";
     }
 }

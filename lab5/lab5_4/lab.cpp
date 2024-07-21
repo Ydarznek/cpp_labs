@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int Lab::processArguments(int argc, char* argv[]) {
+int processArguments(int argc, char* argv[]) {
     if (argc < 4) {
         cerr << "Ошибка: недостаточно аргументов." << endl;
         return -1;
@@ -25,10 +25,10 @@ int Lab::processArguments(int argc, char* argv[]) {
     }
 }
 
-int Lab::sum(int a, int b) {
+int sum(int a, int b) {
     return a + b;
 }
 
-int Lab::multiply(int a, int b) {
+int multiply(int a, int b) {
     return a * b;
 }

@@ -3,15 +3,10 @@
 
 #include <fstream>
 
-class Lab {
-public:
-    static int* max_vect(int size, const int* a, const int* b);
-    static void writeArraysToFile(const int* original, int size, const char* filename);
+using namespace std;
 
-private:
-    static void sortArray(int* array, int size);
-    static void writeArrayToFile(std::ofstream& outFile, const int* array, int size);
-};
-
+int* max_vect(int size, const int* a, const int* b);
+void writeArraysToFile(const int* original, int size, const char* filename);
+void writeArrayToFile(ofstream& outFile, const int* array, int size);
 
 #endif //LAB6_2_LAB_H
