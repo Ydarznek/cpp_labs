@@ -5,8 +5,7 @@
 using namespace std;
 
 int main() {
-//    task t;
-//    t.readAndWrite();
+//  readAndWrite();
 
     string filename = "poem.txt";
 

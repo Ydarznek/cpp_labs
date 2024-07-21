@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void task::readAndWrite() {
+void readAndWrite() {
     double sum = 0;
     const int n = 100;
 
